@@ -11,6 +11,7 @@
         <li><a href="/qtht">Tin-Bài</a></li>
         <li><a href="/qtht/thu-vien-hinh-anh">Hình Ảnh</a></li>
         <li><a href="/qtht/van-ban">Văn bản</a></li>
+        <li><a href="/qtht/lich-cong-tac">Lịch công tác</a></li>
         <li><a href="/qtht/hoi-dap">Hỏi đáp</a></li>
         <li><a href="/qtht/gop-y">Góp ý</a></li>
       </ul>

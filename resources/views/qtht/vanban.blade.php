@@ -71,7 +71,7 @@
                     <form action="#" method="POST" enctype="multipart/form-data">
                       <input type="hidden" name="_method" value="DELETE">
                       <input type="hidden" name="_token" value="{{csrf_token()}}">
-                      <a class="btn btn-warning btn-xs" data-toggle="modal" data-target="#editVanBan">
+                      <a class="btn btn-warning btn-xs" data-toggle="modal" data-target="#editVanBan{{$vb->id}}">
                         <span class="glyphicon glyphicon-edit"></span>
                       </a>
                       <a href="{{ url('qtht/van-ban/xoa-van-ban/'.$vb->id.'?token='.csrf_token()) }}" class="btn btn-danger btn-xs" onclick="return confirm('Bạn chắc chắn muốn xoá văn bản này?')">
@@ -80,78 +80,9 @@
                     </form>
                   @endif
                 </td>
-              </tr>
-              @endforeach
-              </tbody>
-            </table>
-            {{-- pagination --}}
-            {!! $vanban->links() !!}
-          </div>
-        </div>
-    </div>
-  </div>
-  <!-- Thêm Văn bản -->
-  <div class="modal fade" id="addVanBan" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        {!! Form::open(['method'=>'POST','url'=>'qtht/van-ban','enctype'=>'multipart/form-data']) !!}
-        <input type="hidden" name="_token" value="{{csrf_token()}}"/>
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="myModalLabel"><strong>Thêm văn bản</strong></h4>
-        </div>
-        <div class="modal-body">
-          <div class="modal-body">
-            <div class="form-group">
-              <label>Chọn chuyên mục văn bản</label>
-              <select class="form-control" name="menuvb_id" required="">
-                @foreach ($menuvb as $lt)
-                  <option value="{{ $lt->id}}">{{ $lt->ten}}</option>
-                @endforeach
-              </select>
-            </div>
-            <div class="form-group">
-              <label>Loại văn bản</label>
-              <select class="form-control" name="loaivb_id" required="">
-                @foreach ($loaivb as $lvb)
-                  <option value="{{ $lvb->id}}">{{ $lvb->ten }}</option>
-                @endforeach
-              </select>
-            </div>
-            <div class="form-group">
-              <label>Số, kí hiệu</label>
-              <input type="text" class="form-control" name="sovb" value="{{ old('sovb')}}" placeholder="Số, kí hiệu văn bản" required="">
-            </div>
-            <div class="form-group">
-              <label>Trích yếu văn bản</label>
-              <input type="text" class="form-control" name="trichyeuvb" value="{{ old('trichyeuvb')}}" placeholder="Trích yếu văn bản" required=""/>
-            </div>
-            <div class="form-group">
-                <label>Tệp văn bản (đính kèm)</label>
-                <input type="file" name="tepvanban" required=""/>
-            </div>
-            <div class="form-group">
-              <label>Ngày ban hành</label>
-              <input type="date" class="form-control" name="ngaybanhanhvb" value="{{ Carbon\Carbon::now()->format('Y-m-d') }}" required=""/>
-            </div>
-            <div class="form-group">
-              <label>Người kí</label>
-              <input class="form-control" name="nguoiki" value="{{ old('nguoiki')}}" placeholder="Người kí văn bản..." required=""/>
-            </div>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <button type="submit" class="btn btn-primary">Save changes</button>
-        </div>
-        {!! Form::close() !!}
-      </div>
-    </div>
-  </div>
-
-  <!-- Sửa Văn bản -->
-  @if (count($vanban) > 0)
-  <div class="modal fade" id="editVanBan" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                <!-- Sửa Văn bản -->
+  
+  <div class="modal fade" id="editVanBan{{$vb->id}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         {!! Form::open(['method'=>'POST','url'=>'qtht/van-ban/sua-van-ban','enctype'=>'multipart/form-data']) !!}
@@ -230,6 +161,76 @@
         {!! Form::close() !!}
       </div>
     </div>
+              </tr>
+              @endforeach
+              </tbody>
+            </table>
+            {{-- pagination --}}
+            {!! $vanban->links() !!}
+          </div>
+        </div>
+    </div>
   </div>
-  @endif
+  <!-- Thêm Văn bản -->
+  <div class="modal fade" id="addVanBan" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        {!! Form::open(['method'=>'POST','url'=>'qtht/van-ban','enctype'=>'multipart/form-data']) !!}
+        <input type="hidden" name="_token" value="{{csrf_token()}}"/>
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel"><strong>Thêm văn bản</strong></h4>
+        </div>
+        <div class="modal-body">
+          <div class="modal-body">
+            <div class="form-group">
+              <label>Chọn chuyên mục văn bản</label>
+              <select class="form-control" name="menuvb_id" required="">
+                @foreach ($menuvb as $lt)
+                  <option value="{{ $lt->id}}">{{ $lt->ten}}</option>
+                @endforeach
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Loại văn bản</label>
+              <select class="form-control" name="loaivb_id" required="">
+                @foreach ($loaivb as $lvb)
+                  <option value="{{ $lvb->id}}">{{ $lvb->ten }}</option>
+                @endforeach
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Số, kí hiệu</label>
+              <input type="text" class="form-control" name="sovb" value="{{ old('sovb')}}" placeholder="Số, kí hiệu văn bản" required="">
+            </div>
+            <div class="form-group">
+              <label>Trích yếu văn bản</label>
+              <input type="text" class="form-control" name="trichyeuvb" value="{{ old('trichyeuvb')}}" placeholder="Trích yếu văn bản" required=""/>
+            </div>
+            <div class="form-group">
+                <label>Tệp văn bản (đính kèm)</label>
+                <input type="file" name="tepvanban" required=""/>
+            </div>
+            <div class="form-group">
+              <label>Ngày ban hành</label>
+              <input type="date" class="form-control" name="ngaybanhanhvb" value="{{ Carbon\Carbon::now()->format('Y-m-d') }}" required=""/>
+            </div>
+            <div class="form-group">
+              <label>Người kí</label>
+              <input class="form-control" name="nguoiki" value="{{ old('nguoiki')}}" placeholder="Người kí văn bản..." required=""/>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-primary">Save changes</button>
+        </div>
+        {!! Form::close() !!}
+      </div>
+    </div>
+  </div>
+
+  
+  </div>
+  
 @endsection

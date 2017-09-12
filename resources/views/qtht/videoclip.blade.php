@@ -56,11 +56,11 @@
                       {!! Form::open(['method'=>'POST','url'=>'qtht/video-clip/sua-video']) !!}
                         <input type="hidden" name="_token" value="{{csrf_token()}}"/>
                         <input type="hidden" name="id" value="{{ $video->id }}"/>
-                        <div class="modal-body">
-                          <div class="modal-header">
+                        <div class="modal-header">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                             <h4 class="modal-title" id="myModalLabel"><strong>Edit Video</strong></h4>
                           </div>
+                        <div class="modal-body">
                           <div class="form-group">
                             <label>Tiêu đề</label>
                             <input type="text" class="form-control" name="tieude" value="{{ $video->tieude }}" placeholder="Nhập Tiêu đề" required="">
