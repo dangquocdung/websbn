@@ -17,17 +17,17 @@
                 <li
                 @if ($mt->id == $chuyenmuc->id)
 
-                  class="dropdown active" 
+                  class="dropdown active"
 
                 @else
 
                   class="dropdown"
 
                 @endif
-  
+
                 >
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                    {{ $mt->ten }} 
+                    {{ $mt->ten }}
                     @if (count($mt->loaitin) > 0)
                       <span class="caret"></span>
                     @endif
@@ -38,7 +38,7 @@
                         <li><a href="/loai-tin/{{$lt->slug}}"><i class="fa fa-tag" aria-hidden="true"></i> &nbsp{{ $lt->ten }}</a></li>
                       @endif
                     @endforeach
-                    
+
                   </ul>
                 </li>
             @endforeach
@@ -91,7 +91,7 @@
         </a>
       </p>
     </div>
-        
+
     @if (count($chuyenmuc->tintuc)>0)
     @foreach ($chuyenmuc->tintuc as $ttl)
       <div class="list-group-item">
@@ -125,7 +125,7 @@
         </div>
       </div>
     @endif
-    
+
   </div>
 
 
@@ -134,5 +134,9 @@
 <div class="col-xs-6 col-md-3 hidden-sm sidebar-offcanvas" id="sidebar" role="navigation">
   @include('front.layouts.menu-right')
 </div>
-  
+
+@endsection
+
+@section('copyright')
+  @include('front.layouts.copyright')
 @endsection

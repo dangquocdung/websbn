@@ -65,3 +65,7 @@
   </div>
   {!! $tintheoloai->links() !!}
 @endsection
+
+@section('copyright')
+  @include('front.layouts.copyright')
+@endsection

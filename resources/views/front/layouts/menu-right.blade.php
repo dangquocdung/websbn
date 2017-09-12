@@ -98,7 +98,7 @@
 
 
 
-{{-- 
+{{--
 <div class="list-group">
   <a class="dichvucong" href="http://hatinh.dcs.vn/" target="_blank">
     <img class="img-responsive" src="./img/banner-right/chinhdondang.gif" style="display:block; margin:0 auto" width="100%">
@@ -198,13 +198,13 @@
   </a>
 </div>
 
-{{-- <div class="list-group">
+<div class="list-group">
   <a  class="list-group-item active main-color-bg in-hoa-dam">
-    <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Trụ sở xã
+    <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Liên hệ
   </a>
 
   <div id="googleMap"></div>
-</div> --}}
+</div>
 
 {{-- <div class="hidden-xs hidden-sm">
   <script type="text/javascript" src="https://counter1.fcs.ovh/private/counter.js?c=a67ubwhmw66h1sq9gr21llxun5xqufht"></script>

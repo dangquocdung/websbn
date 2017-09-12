@@ -17,7 +17,7 @@
               {{-- @if ($mt->id < 4) --}}
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                    {{ $mt->ten }} 
+                    {{ $mt->ten }}
                     @if (count($mt->loaitin) > 0)
                       <span class="caret"></span>
                     @endif
@@ -28,7 +28,7 @@
                         <li><a href="/loai-tin/{{$lt->slug}}"><i class="fa fa-tag" aria-hidden="true"></i> &nbsp{{ $lt->ten }}</a></li>
                       @endif
                     @endforeach
-                    
+
                   </ul>
                 </li>
             @endforeach
@@ -178,4 +178,8 @@
 
 
 
+@endsection
+
+@section('copyright')
+  @include('front.layouts.copyright')
 @endsection

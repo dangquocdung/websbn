@@ -1,4 +1,8 @@
 @extends('front.layouts.home')
+@section('title')
+  <title>{{ config('app.name', 'Dang Quoc Dung') }}</title>
+@endsection
+
 @section('content')
 
     <div class="list-group">
@@ -17,5 +21,5 @@
       </div>
     </div>
     </div>
-  
+
 @endsection

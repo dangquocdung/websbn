@@ -25,43 +25,17 @@
 
     @yield('title')
     <base href="{{asset('')}}">
-
-
-    <!-- Bootstrap core CSS -->
-    <!-- <link href="./css/bootstrap.min.css" rel="stylesheet"> -->
-    <!-- Bootstrap custom CSS -->
     <link href="./assets/css/app.css" rel="stylesheet">
-
-    <!-- fancybox -->
     <link rel="stylesheet" href="./assets/css/jquery.fancybox.css?v=2.1.6" type="text/css" media="screen" />
+    <script type="text/javascript" src="./js/jquery.min.js"></script>
 
-    <!-- Custom styles for this template -->
-    {{-- <link href="./assets/css/offcanvas.css" rel="stylesheet"> --}}
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
 
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/socket.io.js"></script>
-    <script src="./admin/ckeditor/ckeditor.js"></script>
-    {{-- <script>
-      var socket = io("http://localhost:3000");
-      $(document).ready(function(){
-        socket.on("server_send_quangcao",function(data){
-          var s =   "<a  class='list-group-item active main-color-bg'>";
-              s = s + "<span class='glyphicon glyphicon-cog' aria-hidden='true'></span> Tài trợ</a>";
-              s = s + "<a class='dichvucong' href='" + data + "' target='_blank'>";
-              s = s + "<img class='img-responsive' src='./img/banner-right/" + data + "' style='display:block; margin:0 auto' width='100%'></a>";
-          $("#quangcao").html(s);
+    <script type="text/javascript" src="./js/offcanvas.js"></script>
+    <script type="text/javascript" src="./js/pdf.js"></script>
+    <script type="text/javascript" src="./js/jquery.fancybox.pack.js?v=2.1.6"></script>
+    <script type="text/javascript" src="./admin/ckeditor/ckeditor.js"></script>
 
-        })
-      })
-    </script> --}}
-
-    <link href="./css/rotate.css" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="./js/rotate.js"></script>
-    <script type="text/javascript">
-      $(window).load(function() {
-        // startRotator("#rotator");
-      })
-    </script>
   </head>
 
   <body>
@@ -130,38 +104,10 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/offcanvas.js"></script>
-    <script src="./js/pdf.js"></script>
-    <script type="text/javascript" src="./js/jquery.fancybox.pack.js?v=2.1.6"></script>
-    <script type="text/javascript">
-      $(document).ready(function() {
-        $(".bando").fancybox();
-        $(".thongke").fancybox();
 
-        // hide #back-top first
-        $("#back-top").hide();
+    <script type="text/javascript" src="./js/my.js"></script>
 
-        // fade in #back-top
-        $(function () {
-          $(window).scroll(function () {
-            if ($(this).scrollTop() > 100) {
-              $('#back-top').fadeIn();
-            } else {
-              $('#back-top').fadeOut();
-            }
-          });
 
-          // scroll body to 0px on click
-          $('#back-top .fi-arrow-up').click(function () {
-            $('body,html').animate({
-              scrollTop: 0
-            }, 800);
-            return false;
-          });
-        });
-      });
-    </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClqb4ClPasKU8unirsY-uT9mw2t7G7d8k&callback=initMap" type="text/javascript"></script>
     <script>
         function initialize() {
@@ -183,43 +129,9 @@
         }
 
         google.maps.event.addDomListener(window, 'load', initialize);
-
-        function goBack() {
-            window.history.back();
-        }
     </script>
 
-    <script type="text/javascript">
-
-      // $(document).ready(function() {
-      //   $(".urlhinh").fancybox();
-      // });
-
-      function readURL(input){
-        if (input.files && input.files[0]){
-          var reader = new FileReader();
-
-          reader.onload = function(e){
-            $("#showimages").attr('src', e.target.result);
-          }
-
-          reader.readAsDataURL(input.files[0]);
-        }
-      }
-
-      $("#inputimages").change(function(){
-        readURL(this);
-      })
-    </script>
-
-    <script>
-      CKEDITOR.replace('noidung');
-    </script>
-
-    <!-- Go to www.addthis.com/dashboard to customize your tools -->
     <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5949233b18804526"></script>
-    <!-- <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-58b3ca27cfd3d5ce"></script> -->
-    {{-- <a href="https://www.freecounterstat.com" title="web counter"><img src="https://counter1.fcs.ovh/private/freecounterstat.php?c=qzhhxxk5dn68mrb1r4ugwkjjctbrhg5t" border="0" title="web counter" alt="web counter"></a> --}}
 
   </body>
 </html>

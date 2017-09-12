@@ -1,5 +1,9 @@
 @extends('front.layouts.home')
 
+@section('title')
+  <title>Quản trị Hình ảnh | {{ config('app.name', 'Dang Quoc Dung') }}</title>
+@endsection
+
 @section('menu-ngang')
   @include('qtht.layouts.menu-ngang')
 @endsection
