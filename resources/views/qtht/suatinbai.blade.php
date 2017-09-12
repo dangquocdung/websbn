@@ -45,7 +45,7 @@
                 </div>
                 <div class="form-group">
                     <label>Hình Ảnh</label>
-                    <img src="{{ $tintuc->urlhinh }}" id="showimages" >
+                    <img src="./img/tin-tuc/{{ $tintuc->urlhinh }}" id="showimages" >
                     <input type="file" name="urlhinh" id="inputimages" />
                 </div>
                 <div class="form-group">

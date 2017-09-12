@@ -183,7 +183,7 @@
         }
 
         google.maps.event.addDomListener(window, 'load', initialize);
-        
+
         function goBack() {
             window.history.back();
         }
@@ -191,9 +191,9 @@
 
     <script type="text/javascript">
 
-      $(document).ready(function() {
-        $(".urlhinh").fancybox();
-      });
+      // $(document).ready(function() {
+      //   $(".urlhinh").fancybox();
+      // });
 
       function readURL(input){
         if (input.files && input.files[0]){
