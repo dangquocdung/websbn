@@ -10,7 +10,7 @@
       </div>
     </div>
   {!! Form::close() !!} --}}
-@if (count($thongbao)>0)
+{{-- @if (count($thongbao)>0)
 <div class="list-group">
   <a  class="list-group-item active thong-bao" href="/loai-van-ban/thong-bao">
     <span class="glyphicon glyphicon-volume-up site-logo" aria-hidden="true"></span> <strong>THÔNG BÁO</strong>
@@ -19,6 +19,21 @@
   @foreach ($thongbao as $tb)
     <a href="{{$tb->tepvanban}}" target="_blank">
       <span class="glyphicon glyphicon-paperclip site-logo" aria-hidden="true"></span> {{ $tb->trichyeuvb}}
+    </a>
+  @endforeach
+  </div>
+</div>
+@endif --}}
+
+@if (count($vanbanmoi)>0)
+<div class="list-group">
+  <a  class="list-group-item active" href="/loai-van-ban/thong-bao">
+    <span class="glyphicon glyphicon-volume-up site-logo" aria-hidden="true"></span> <strong>Văn bản mới</strong>
+  </a>
+  <div class="list-group-item">
+  @foreach ($vanbanmoi as $vbm)
+    <a href="./van-ban/tep-van-ban/{{$vbm->tepvanban}}" target="_blank">
+      <span class="glyphicon glyphicon-paperclip site-logo" aria-hidden="true"></span> {{ $vbm->trichyeuvb}}
     </a>
   @endforeach
   </div>

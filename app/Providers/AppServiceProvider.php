@@ -38,6 +38,9 @@ class AppServiceProvider extends ServiceProvider
           $loaivb = LoaiVB::all();
           $view->with('loaivb',$loaivb);
 
+          $vanbanmoi = VanBan::where('active', '1')->orderby('created_at','desc')->limit(10)->get();
+          $view->with('vanbanmoi',$vanbanmoi);
+
           $thongbao = VanBan::where('loaivb_id', '1')->where('active', '1')->orderby('created_at','desc')->limit(5)->get();
           $view->with('thongbao',$thongbao);
 

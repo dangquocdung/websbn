@@ -3,7 +3,12 @@
   <title>{{ config('app.name', 'Dang Quoc Dung') }}</title>
 @endsection
 
+@section('menu-ngang')
+  @include('front.layouts.menu-ngang-home')
+@endsection
+
 @section('content')
+  <div class="col-md-12">
 
     <div class="list-group">
       <a  class="list-group-item active main-color-bg in-hoa-dam">
@@ -19,6 +24,7 @@
             </div>
           @endforeach
       </div>
+    </div>
     </div>
     </div>
 

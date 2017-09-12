@@ -53,7 +53,7 @@
                 <td>{{ $vb->sovb }}</td>
                 <td style="text-align:left;">{{ str_limit($vb->trichyeuvb, $limit=120, $end='......') }}</td>
                 <td style="text-align:left;">
-                  <a href="{{$vb->tepvanban}}" target="_blank"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
+                  <a href="./van-ban/tep-van-ban/{{$vb->tepvanban}}" target="_blank"><i class="fa fa-file-pdf-o" aria-hidden="true"></i></a>
                 </td>
                 <td>{{ $vb->nguoiki }}</td>
                 <td>{{ $vb->loaivb->ten }}</td>

@@ -221,12 +221,32 @@ class PostController extends Controller
           $tintuc->tomtat = $request->get('tomtat');
           $tintuc->noidung = $request->get('noidung');
 
-          if ($request->file('urlhinh')){
-            $file = $request->file('urlhinh');
-            $tenhinh = Storage::put('public/img/tin-tuc', $file);
+
+          $file = Input::file('urlhinh');
+          // making counting of uploaded images
+
+          if ($file){
+            $rules = array('file' => 'required|mimes:jpg,jpeg,bmp,png');
+            
+            $validator = Validator::make(array('file'=>$file), $rules);
+
+            if ($validator->passes()){
+              $destinationPath = './img/tin-tuc/'; //upload folder in public Directory
+              $tenhinh = $file->getClientOriginalName();
+              $upload_success = $file->move($destinationPath, $tenhinh);
+            }else{
+              $tenhinh = $tintuc->urlhinh;
+            }
 
             $tintuc->urlhinh = $tenhinh;
           }
+
+          // if ($request->file('urlhinh')){
+          //   $file = $request->file('urlhinh');
+          //   $tenhinh = Storage::put('public/img/tin-tuc', $file);
+
+          //   $tintuc->urlhinh = $tenhinh;
+          // }
 
 
           if ($request->get('duyetdang')){

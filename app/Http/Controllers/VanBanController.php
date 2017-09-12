@@ -4,8 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Input;
 use Illuminate\Support\Facades\Storage;
 
+use Validator;
 
 use App\VanBan;
 use App\MenuVB;
@@ -75,8 +77,27 @@ class VanBanController extends Controller
 
         $vb->nguoiki = $request->get('nguoiki');
 
-        $file = $request->file('tepvanban');
-        $tentepvb = Storage::put('public/tep-van-ban', $file);
+        $file = Input::file('tepvanban');
+          // making counting of uploaded images
+
+          if ($file){
+            $rules = array('file' => 'required|mimes:pdf,doc,xls');
+            
+            $validator = Validator::make(array('file'=>$file), $rules);
+
+            if ($validator->passes()){
+              $destinationPath = './van-ban/tep-van-ban/'; //upload folder in public Directory
+              $tentepvb = $file->getClientOriginalName();
+              $upload_success = $file->move($destinationPath, $tentepvb);
+            }else{
+              $tentepvb = $vb->tepvanban;
+            }
+          }
+
+        // $file = $request->file('tepvanban');
+        // $tentepvb = Storage::put('public/tep-van-ban', $file);
+
+
         $vb->tepvanban = $tentepvb;
 
       $vb->save();
