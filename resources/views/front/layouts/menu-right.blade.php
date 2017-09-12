@@ -77,7 +77,7 @@
       </a>
   </div>
 </div> --}}
-{{-- <div id="quangcao">
+<div id="quangcao">
 </div>
 <div class="list-group">
   <a  class="list-group-item active main-color-bg in-hoa-dam">
@@ -96,7 +96,7 @@
   <a class="dichvucong" href="http://qppl.hatinh.gov.vn/vbpq_hatinh.nsf" target="_blank">
     <img class="img-responsive" src="./img/banner-right/4.jpg" style="display:block; margin:0 auto" width="100%">
   </a>
-</div> --}}
+</div>
 
 
 {{-- <div class="list-group">
@@ -113,15 +113,15 @@
 
 
 
-{{--
-<div class="list-group">
+
+{{-- <div class="list-group">
   <a class="dichvucong" href="http://hatinh.dcs.vn/" target="_blank">
     <img class="img-responsive" src="./img/banner-right/chinhdondang.gif" style="display:block; margin:0 auto" width="100%">
   </a>
   <a class="dichvucong" href="http://www.hatinh.gov.vn/hochiminh" target="_blank">
     <img class="img-responsive" src="./img/banner-right/hochiminh.gif" style="display:block; margin:0 auto" width="100%">
   </a>
-</div>
+</div> --}}
 
 
 
@@ -129,12 +129,12 @@
   <a  class="list-group-item active main-color-bg in-hoa-dam">
     <span class="glyphicon glyphicon-cog" aria-hidden="true"></span> Dịch vụ công trực tuyến
   </a>
-  <a class="dichvucong" href="http://dichvucong.hatinh.gov.vn/portaldvc/KenhTin/thu-tuc-hanh-chinh.aspx?_nlv=XP&_tk=" target="_blank">
+  <a class="dichvucong" href="http://dichvucong.hatinh.gov.vn/" target="_blank">
     <img class="img-responsive" src="./img/banner-right/dichvucong_tt.jpg" style="display:block; margin:0 auto" width="100%">
   </a>
 </div>
 
-<div class="list-group">
+{{-- <div class="list-group">
   <a class="dichvucong" href="http://qlccvc.hatinh.gov.vn/index.php?option=com_users&view=login" target="_blank">
     <img class="img-responsive" src="./img/banner-right/5.jpg" style="display:block; margin:0 auto" width="100%">
   </a>
@@ -156,7 +156,7 @@
   <a class="bando" href="./img/bando/{{ config('app.brand')}}.jpg">
     <img class="img-responsive" src="./img/bando/{{ config('app.brand')}}.jpg" style="display:block; margin:0 auto" width="100%">
   </a>
-</div> --}}
+</div>  --}}
 
 @if ($video1)
 <div class="list-group">
