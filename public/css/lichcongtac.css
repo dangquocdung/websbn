@@ -1,0 +1,145 @@
+body { background: url(../images/bg-2.jpg) no-repeat top center #000;font:12px Arial, Helvetica, sans-serif; }
+#header .name {width:100%; margin:10px 0;text-align:center; color:#FFF; text-transform:uppercase; font-size:36px; text-shadow: 2px 2px #000;}
+#header .org {width:100%; text-align:center; margin:10px 0; color:#F00; text-transform:uppercase; font-size:22px;  margin-left:200px;}
+#wrapper {width:1270px; overflow:hidden; margin:0 auto;}
+#main_content .left { width:320px; float:left;}
+#main_content .left .box1row {width:170px; }
+#main_content .left .box1row .title_box {text-align:center;}
+#main_content .left .box2row {width:310px; }
+#main_content .main { width:940px; float:left; padding:0; }
+#main_content .main .box1row {width:350px; }
+#main_content .main .box2row {width:940px; }
+.box { height:160px ;  float:left; margin-top:10px; }
+.box_logo { height:165px ;  float:left; margin-top:10px; }
+.box .content {height:135px; overflow:hidden;}
+.box .content .hinh_anh {text-align:center; padding-top:10px;padding-left:10px;}
+.box .content .slogan {text-align:center; padding-top:0px; font-size:12px;}
+.box .content .org { text-align:left;  margin-top:0px; font-size:16px;margin-left:-5px;}
+.box .title_box {bottom:0px; color:#FFF; margin:0; font-size:13px; margin-left:10px; text-align:left;}
+.clearfix {clear:both;}
+#box_thongbao {height:330px;}
+#box_thongbao  .content{height:305px;}
+#box_thongbao  p {text-align:left;  font-size:12px; font-weight:bold; margin:5px 0 5px 0; padding:0px; padding-left:5px;  float:left; text-align:justify;}
+#box_thongbao ul {margin:0; padding:0;padding:0 10px;}
+#box_thongbao .f_time { float:left;font-size:12px; font-weight:bold;font-style:italic; margin-left:-5px; }
+#box_thongbao ul li {list-style:none; margin:0; }
+#box_thongbao .block_message{border-bottom: 1px dotted #FFF; margin-bottom:5px;}
+#box_thongbao .work_place {font-size:12px; text-align:right; font-style:italic;}
+.box .contetn { margin:10px; display:block;}
+.box_do {background:#CD6630;}
+.box_xanh_dam {background:#6630CD;}
+.box_tim {background:#9A009A;}
+
+.box_xanh {background:#0207d4;}
+.box_xanh_do_b3 {
+background: #b31b42;
+color: #FFF;
+}
+.box_xanh_pbc {
+background: #0207d4;
+color: #FFF;
+}
+
+
+.box_h2{ height:505px!important;}
+.box_h2 .content {height:480px!important; overflow:hidden;}
+
+.box .day {color:#FFF; font-size:16px;   float:left; margin-top:0;}
+.box .year {color:#FFF; font-size:16px;  float:left; margin-left:10px; margin-top:0;}
+.lich_lam_viec table {border-top:1px dotted #ccc; border-right:1px dotted #ccc;}
+.lich_lam_viec table td {  border-bottom:1px dotted #ccc; font-size:14px; border-left:1px dotted #ccc;}
+
+.slider {	float: left;	overflow: hidden;	margin-top:0px;	margin-left:20px;	}
+.slider ul {margin:0; padding:0;}
+.slider ul li { float:left; height:150px; width:160px; margin:10px; text-align:center; list-style:none; text-align:justify;}
+.slider ul li .img img { width:158px; height:90px; border:1px solid #CCC;}
+.slider ul li span { width:170px; font-weight:bold;}
+.img a {	text-decoration: none; }
+.img a span {text-align:center;  width:150px; display:block;	font-family: Tahoma, Geneva, sans-serif;	font-size: 12px;	font-weight: bold;	color: #000;	text-decoration: none;}
+.box .showWeather {margin-top:-80px; text-align: right; color:#FFF; margin-right:10px;}
+#ticker {
+	height: 470px;
+	overflow: hidden;
+	margin: 0px 20px 20px 20px;
+
+}
+#ticker .org {color:#fff;}
+#ticker li {
+	height: 380px;
+
+}
+
+
+
+#box_edit_default #object_table {
+	width:100%;
+	border-top:1px solid #CCC;
+	border-left:1px solid #CCC;
+	margin:0px;
+	padding:0px;
+}
+#box_edit_default #object_table tr:hover {
+	background-color:#EDEEDC;
+}
+
+#box_edit_default #object_table tr:nth-child(odd) {
+  background-color: #def;
+}
+#box_edit_default #object_table tr:nth-child(even) {
+  background-color: #FFF;
+}
+.chu_tri {width:140px;}
+.chu_tri span { display:block;}
+#box_edit_default #object_table tr th {
+	background-color:#EEE ;
+	border-right:1px solid #CCC;
+	border-bottom:1px solid #CCC;
+	color: #000;
+	font: bold 12px/18px Arial;
+	text-align:center;
+	height:30px;
+	line-height:20px;
+}
+#box_edit_default #object_table tr th a {
+	color:#000;
+	text-decoration:none;
+	font:  12px/18px Arial;
+}
+#box_edit_default #object_table tr td {
+	border-right:1px solid #CCC;
+	border-bottom:1px solid #CCC;
+	text-align:left;
+	padding-left:5px;
+	padding-top:10px;
+	font: 12px/18px Arial;
+}
+
+#event_box {background: #df0808 url(../images/sukien.gif) repeat-x; height:30px; margin:0px; width:100%;}
+#event_box .event_show {width:850px; float:left;
+color: #fae606;
+font: 14px Arial;
+text-transform: uppercase;
+font-weight: bold;
+line-height: 30px;
+}
+#event_box .lich_tuan_toi_tuan {width:290px; float:left; text-align:left; color:#fff; line-height:30px; font-weight:bold; padding-left:20px;}
+#lich td.row_time { text-align:center;}
+#lich td p {margin:0; padding:0; text-align:left;}
+#lich td ,#lich th {  text-align:center !important; border-bottom:1px solid #ccc; padding:10px 5px;text-align:left;}
+#lich th {text-transform:uppercase; text-align:center;}
+#lich th.thoi_gian {text-transform:uppercase; width:85px;padding:10px 0px;}
+#lich  { font-size:14px;}
+#lich .noi_dung {width:385px !important;}
+#lich .r1  {font-size:16px !important;}
+#lich .r1  th {font-size:13px !important;}
+#lich .r2  {font-size:16px !important;}
+#lich .r2 th {font-size:16px !important;}
+#lich .r3  {font-size:16px !important;}
+#lich .r3  th {font-size:15px !important;}
+#lich .r4  {font-size:15px !important;}
+#lich .r5  {font-size:13px !important;}
+#lich .r6  {font-size:12px !important;}
+
+.ghichu   {width:120px;}
+
+.dia_diem  {width:150px;}

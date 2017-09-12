@@ -1,0 +1,158 @@
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+
+@media screen and (max-width: 768px) {
+  // body{
+  //   padding-top: 115px;
+  // }
+  .navbar{
+    margin-bottom: 5px;
+
+  }
+
+  .navbar-toggle{
+    float: left !important;
+  }
+
+  .navbar-collapse{
+    border: none;
+  }
+
+  .navbar-nav .open .dropdown-menu {
+    background-color: $bg-color;
+  }
+
+  .brand-text {
+  display: inline-block;
+  position: relative;
+  left: 60px;
+  top: 10px;
+  float: left;
+
+    h1 {
+      color: rgb(0, 88, 143);
+      font-family: arial;
+      font-size: 10px;
+      font-weight: bold;
+      line-height: 15px;
+      text-shadow: rgb(255, 255, 255) 2px 0px 0px, rgb(255, 255, 255) -2px 0px 0px, rgb(255, 255, 255) 0px 2px 0px, rgb(255, 255, 255) 0px -2px 0px, rgb(255, 255, 255) 1px 1px, rgb(255, 255, 255) -1px -1px 0px, rgb(255, 255, 255) 1px -1px 0px, rgb(255, 255, 255) -1px 1px 0px;
+      text-transform: uppercase;
+      margin: 0px 0px 5px;
+    }
+    h2 {
+      color: rgb(232, 29, 2);
+      font-size: 15px;
+      font-weight: bold;
+      text-shadow: rgb(255, 255, 255) 2px 0px 0px, rgb(255, 255, 255) -2px 0px 0px, rgb(255, 255, 255) 0px 2px 0px, rgb(255, 255, 255) 0px -2px 0px, rgb(255, 255, 255) 1px 1px, rgb(255, 255, 255) -1px -1px 0px, rgb(255, 255, 255) 1px -1px 0px, rgb(255, 255, 255) -1px 1px 0px;
+      text-transform: uppercase;
+      margin: 0px;
+    }
+  }
+
+
+
+  .menu-ngang{
+    padding-left: 15px;
+
+  }
+
+  .header-banner-slide {
+    height: 60px; }
+
+  .carousel-inner {
+    .item{
+      img{
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all .25s ease-out;
+         -o-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+  }
+
+  .row-offcanvas-right {
+    right: 0;
+  }
+
+  .row-offcanvas-left {
+    left: 0;
+  }
+
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-right.active {
+    right: 50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left.active {
+    left: 50%; /* 6 columns */
+  }
+
+  .sidebar-offcanvas {
+    position: absolute;
+    top: 0;
+    width: 50%; /* 6 columns */
+  }
+
+  #googleMap {
+      height: 200px;
+      width: 100%;
+  }
+
+  .chi-tiet-tin{
+    .noi-dung{
+      p {
+        img {
+          max-width: 100%;
+        }
+      }
+      table {
+        tr{
+          th{
+            text-align: center; /* center checkbox horizontally */
+            vertical-align: middle; /* center checkbox vertically */
+          }
+          td{
+            text-align: center; /* center checkbox horizontally */
+            vertical-align: middle; /* center checkbox vertically */
+
+            img {
+              max-width: 100%;
+            }
+          }
+        }
+
+        tbody{
+          tr{
+            th{
+              text-align: center; /* center checkbox horizontally */
+              vertical-align: middle; /* center checkbox vertically */
+            }
+            td{
+              text-align: center; /* center checkbox horizontally */
+              vertical-align: middle; /* center checkbox vertically */
+
+              img {
+                max-width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,496 @@
+html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+
+body {
+  // padding-top: 185px;
+  background: lighten($bg-color, 20%);
+  line-height: 20px;
+
+}
+
+a{
+  &:hover{
+    text-decoration: none !important;
+
+  }
+}
+
+.navbar{
+  background: #58cdec url(../../img/banner/banner.png) top left no-repeat;
+  background-size: 100% auto;
+  margin-bottom: 0;
+}
+
+.navbar-default{
+  border: none;
+}
+
+.brand-text {
+  display: inline-block;
+  position: relative;
+  left: 30px;
+  top: 30px;
+  float: left;
+
+  h1 {
+    color: rgb(0, 88, 143);
+    font-family: arial;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 35px;
+    text-shadow: rgb(255, 255, 255) 2px 0px 0px, rgb(255, 255, 255) -2px 0px 0px, rgb(255, 255, 255) 0px 2px 0px, rgb(255, 255, 255) 0px -2px 0px, rgb(255, 255, 255) 1px 1px, rgb(255, 255, 255) -1px -1px 0px, rgb(255, 255, 255) 1px -1px 0px, rgb(255, 255, 255) -1px 1px 0px;
+    text-transform: uppercase;
+    margin: 0px 0px 5px;
+  }
+  h2 {
+    color: rgb(232, 29, 2);
+    font-size: 45px;
+    font-weight: bold;
+    text-shadow: rgb(255, 255, 255) 2px 0px 0px, rgb(255, 255, 255) -2px 0px 0px, rgb(255, 255, 255) 0px 2px 0px, rgb(255, 255, 255) 0px -2px 0px, rgb(255, 255, 255) 1px 1px, rgb(255, 255, 255) -1px -1px 0px, rgb(255, 255, 255) 1px -1px 0px, rgb(255, 255, 255) -1px 1px 0px;
+    text-transform: uppercase;
+    margin: 0px;
+  }
+}
+
+
+//
+// .collapse.in{
+//   background: darken(#f79b11, 30%);
+// }
+
+.navbar-nav{
+  li{
+    &:hover{
+      background-color: #de6f00;
+    }
+  }
+}
+
+.navbar-collapse{
+  padding-left: 0;
+}
+
+.menu-ngang{
+  background-color: $bg-color;
+  ul{
+    li{
+      a{
+        // text-transform: uppercase;
+        font-weight: bold;
+
+      }
+    }
+  }
+}
+
+// .menu-ngang-2{
+//   // background-color: lighten(#f79b11, 20%);
+//   margin-bottom: 5px;
+// }
+
+marquee{
+  padding-top: 3px;
+  font-style: italic;
+  font-weight: bold;
+  color: orange;
+}
+
+#sidebar{
+  padding-left: 0;
+}
+
+.in-hoa-dam{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+
+
+input[type="file"] {
+    padding-top: 10px;
+}
+
+.site-logo {
+  animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+.banner-xa{
+  position: absolute;
+  float: left;
+  height: 100%;
+  z-index: 99;
+}
+
+.banner-giua{
+  margin-bottom: 15px;
+}
+
+.banner-top-right{
+  padding: 2px 0;;
+  float: left;
+  height: 100%;
+}
+
+.thong-bao{
+  background-color: #f41f1f !important;
+  border-color: #f41f1f !important;
+}
+
+.dropdown-submenu {
+
+    position: relative;
+
+    .dropdown-menu {
+      top: 0;
+      left: 100%;
+      margin-top: -6px;
+      margin-left: -1px;
+    }
+
+    &:hover {
+
+      .dropdown-menu {
+          display: block;
+      }
+    }
+}
+
+.carousel-inner {
+  .item{
+    background-color: #fff;
+    img{
+      margin: 0 auto;
+      @media screen and (min-width: 767px) {
+        padding: 10px;
+      }
+    }
+  }
+}
+
+.panel-default {
+    margin-top: 20px !important;
+}
+
+
+.main-content{
+
+  .tab-group-item{
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    background-color: #fff;
+    // border: 1px solid darken($bg-color, 10%)#ddd;
+    .tab-pane{
+
+      padding: 10px 15px;
+      border: 1px solid #ddd;
+      border-top: none;
+
+      .tin-moi{
+        padding: 5px 0;
+      }
+
+    }
+  }
+
+
+}
+
+.tin-moi{
+  padding: 5px 0;
+
+  .minh-hoa-tin-moi{
+    display: none;
+    img{
+      max-width: 50px !important;
+    }
+  }
+
+  .tom-tat-tin-moi{
+    display: none;
+  }
+
+
+}
+
+.tin-moi-active{
+  background-color: #337ab7;
+  a{
+    color: white;
+  }
+}
+
+.tin-moi-theo-loai{
+  padding: 5px 0;
+}
+
+#fnHinhMinhHoa{
+  img{
+    width: 100% !important;
+  }
+}
+
+
+
+
+.footer-mega-link {
+
+    background: #f4f4f4;
+    margin-bottom: 0;
+    margin-top: 15px;
+    padding: 8px 15px;
+    text-align: right;
+    color: #333;
+
+}
+
+.news-desc{
+  text-align: justify;
+}
+
+.list-group{
+
+  margin-top: 20px;
+
+  .list-group-item{
+
+    border-color: darken($bg-color, 10%) !important;
+
+    .tintuc{
+      padding-right: 10px;
+
+      h4{
+        text-align: center;
+        line-height: 23px;
+      }
+      .minhhoa{
+        padding: 5px 15px;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+    .chi-tiet-tin{
+      h3{
+        text-align: center;
+      }
+      .thong-tin{
+        font-style: italic;
+        text-align: right;
+      }
+      .news-desc{
+        text-indent: 30px;
+        font-weight: bold;
+        font-style: italic;
+      }
+    }
+  }
+}
+
+.list-group-item.active{
+  background-color: darken($bg-color, 10%);
+  border-color: darken($bg-color, 10%);
+  border-radius: 5px 5px 0 0;
+}
+
+.hinh-minh-hoa{
+  img{
+    padding: 5px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.chi-tiet-tin{
+  .noi-dung{
+    p {
+      text-align: justify;
+      text-indent: 30px;
+      overflow: hidden;
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 700px;
+      }
+    }
+
+    table {
+      tr{
+        th{
+          text-align: center; /* center checkbox horizontally */
+          vertical-align: middle; /* center checkbox vertically */
+        }
+        td{
+          text-align: center; /* center checkbox horizontally */
+          vertical-align: middle; /* center checkbox vertically */
+
+          img {
+            display: block;
+            margin: 0 auto;
+            max-width: 700px;
+          }
+        }
+      }
+
+      tbody{
+        tr{
+          th{
+            text-align: center; /* center checkbox horizontally */
+            vertical-align: middle; /* center checkbox vertically */
+          }
+          td{
+            text-align: center; /* center checkbox horizontally */
+            vertical-align: middle; /* center checkbox vertically */
+
+            img {
+              display: block;
+              margin: 0 auto;
+              max-width: 700px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.break {
+    clear: both;
+    height: 10px;
+    width: 100%;
+    margin: auto;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.copyright{
+
+  background: url(../../img/bgr_footer.png);
+  margin: 0px;
+  padding: 0px;
+}
+
+
+.content {
+  text-align: center;
+  margin: 2% 0px;
+  color: #ffffff;
+  width: 100%;
+  float: left;
+
+  h4 {
+    text-transform: uppercase;
+  }
+}
+
+.cd-top {
+    display: inline-block;
+    z-index: 999;
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    bottom: 50px;
+    right: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
+    background: #ffffff url(../../img/cd-top-arrow.ico) no-repeat center center;
+    background-size: 100% 100%;
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+    -moz-transition: opacity .3s 0s, visibility 0s .3s;
+    transition: opacity .3s 0s, visibility 0s .3s;
+}
+
+.chi-tiet-tin{
+  h2{
+    text-align: center;
+  }
+
+  .minhhoa{
+    padding: 10px;
+  }
+}
+
+.tim-kiem{
+  float: left;
+}
+
+#showimages{
+  display:block;
+  max-width:200px;
+  max-height:200px;
+
+}
+
+#googleMap {
+    height: 250px;
+    width: 100%;
+}
+
+.video-container {
+	position:relative;
+	padding-bottom:56.25%;
+	padding-top:30px;
+	height:0;
+	overflow:hidden;
+
+  iframe{
+  	position:absolute;
+  	top:0;
+  	left:0;
+  	width:100%;
+  	height:100%;
+  }
+}
+
+#back-top {
+  display: inline-block;
+
+  height: 50px;
+  width: 50px;
+
+  position: fixed;
+  bottom:35px;
+  right: 2%;
+  z-index: 100;
+  opacity: 0.5;
+}
+
+
+.img-wrapper {
+  position: relative;
+  margin-bottom: 20px;
+  overflow: hidden;
+
+  &:hover .img-overlay{
+    display: block;
+  }
+ }
+
+.img-overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.img-overlay:before {
+  content: ' ';
+  display: block;
+  /* adjust 'height' to position overlay content vertically */
+  height: 50%;
+}
