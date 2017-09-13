@@ -17,13 +17,13 @@
               <div class="modal-body">
                 <div class="form-group">
                   <label>Loại tin</label>
-                  <select class="form-control" name="loaitin_id" required="">
+                  <select class="form-control" name="loaitin_id" required="" autofocus="">
                     @foreach ($chuyenmuc as $cm)
-                      @if ($cm->id < 3 || $cm->id == 4)
+                     
                         @foreach ($cm->loaitin as $lt)
                         <option value="{{ $lt->id}}">{{ $lt->menutop->ten}} | {{ $lt->ten}}</option>
                         @endforeach
-                      @endif
+                      
                     @endforeach
                   </select>
                 </div>
