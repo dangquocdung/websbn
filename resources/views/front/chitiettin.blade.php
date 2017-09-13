@@ -104,7 +104,7 @@
       <div class="chi-tiet-tin">
         <h3>{{ $tin->tieude }}</h3>
         <div class="thong-tin">
-          <p style="margin: 10px 0 20px"><span class="glyphicon glyphicon-time"></span> {{ Carbon\Carbon::parse($tin->created_at)->format('h:m d-m-Y ') }}</p>
+          <p style="margin: 10px 0 20px"><span class="glyphicon glyphicon-time"></span> {{ Carbon\Carbon::parse($tin->created_at)->format('G:m:s d-m-Y ') }}</p>
           {{-- <span>- <strong>{{ $tin->nguoidang->name }}</strong></span> --}}
         </div>
 
